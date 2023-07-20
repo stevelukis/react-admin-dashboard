@@ -88,7 +88,9 @@ const Sidebar = () => {
             <Link to="/contacts">
               <MenuItem>Contacts Information</MenuItem>
             </Link>
-            <MenuItem>Invoices Balances</MenuItem>
+            <Link to="/invoices">
+              <MenuItem>Invoices Balances</MenuItem>
+            </Link>
           </SubMenu>
         </Menu>
       </Box>
