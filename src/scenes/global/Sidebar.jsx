@@ -11,6 +11,7 @@ import { Box, IconButton, Stack, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import ProfilePicture from "../../assets/profile.jpeg";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const theme = useTheme();
@@ -81,8 +82,12 @@ const Sidebar = () => {
           }}
         >
           <SubMenu label="Data" defaultOpen={true}>
-            <MenuItem>Manage Team</MenuItem>
-            <MenuItem>Contacts Information</MenuItem>
+            <Link to="/team">
+              <MenuItem>Manage Team</MenuItem>
+            </Link>
+            <Link to="/contacts">
+              <MenuItem>Contacts Information</MenuItem>
+            </Link>
             <MenuItem>Invoices Balances</MenuItem>
           </SubMenu>
         </Menu>
