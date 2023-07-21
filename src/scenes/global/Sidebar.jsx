@@ -48,8 +48,8 @@ const Sidebar = () => {
         mt={2}
         direction="column"
         alignItems="center"
-        hidden={collapsed}
         textAlign="center"
+        sx={{ display: collapsed ? "none" : "flex" }}
       >
         <img
           height="100px"
